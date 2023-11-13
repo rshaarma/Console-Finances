@@ -88,10 +88,12 @@ var finances = [
 ];
 
 console.log(`Financial Analysis \n----------------------------`);
-// --------------------------------------
+
+// The total number of months included in the dataset.
 var totalMonths = finances.length;
 console.log("Total months: " + totalMonths);
-// -------------------------------------
+
+// The net total amount of Profit/Losses over the entire period.
 var totalNetSum = 0;
 
 for (var i = 0; i < totalMonths; i++) {
@@ -99,8 +101,19 @@ for (var i = 0; i < totalMonths; i++) {
 }
 console.log(`Total: $${totalNetSum}`);
 
-// ---------------------------------------
+// The average of the changes in Profit/Losses over the entire period.
+var differences = [];
 
-var differences = 0;
+for (var i = 1; i < totalMonths; i++) {
+  var difference = finances[i][1] - finances[i - 1][1];
+  differences.push(difference);
+}
 
-for (var i = 0; i < totalMonths; i++) {}
+var averageChange =
+  differences.reduce((accumulator, value) => {
+    return accumulator + value;
+  }, 0) /
+  (totalMonths - 1);
+console.log(`Average Change: ${averageChange.toFixed(2)}`);
+
+// The greatest increase in Profit/Losses (date and amount) over the entire period.
