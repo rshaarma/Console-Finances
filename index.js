@@ -87,8 +87,20 @@ var finances = [
   ["Feb-2017", 671099],
 ];
 
-var totalMonths = 0;
-for (var i = 0; i < finances.length; ) {
-  //   totalMonths = totalMonths + finances[i][0];
-  console.log(finances.length);
+console.log(`Financial Analysis \n----------------------------`);
+// --------------------------------------
+var totalMonths = finances.length;
+console.log("Total months: " + totalMonths);
+// -------------------------------------
+var totalNetSum = 0;
+
+for (var i = 0; i < totalMonths; i++) {
+  totalNetSum += finances[i][1];
 }
+console.log(`Total: $${totalNetSum}`);
+
+// ---------------------------------------
+
+var differences = 0;
+
+for (var i = 0; i < totalMonths; i++) {}
