@@ -1,8 +1,4 @@
 <br />
-<!-- <p align="center">
-  <a href=" https://rshaarma.github.io/rsdev-portfolio/">
-  <img width="265" alt="Screenshot 2023-10-31 at 18 28 55" src="https://github.com/rshaarma/rsdev-portfolio/assets/64362564/7bfd0c03-0a8f-498b-9425-233e5360c286">
-  </a> -->
 
   <h3 align="center">Welcome to Console Finances ReadMe</h3>
 
@@ -34,6 +30,7 @@
 ## About The Project
 
 <img width="484" alt="Screenshot 2023-11-14 at 02 34 05" src="https://github.com/rshaarma/Console-Finances/assets/64362564/37de71a1-ce4c-41dc-a918-4341328d6c0a">
+<span><img width="612" alt="Screenshot 2023-11-14 at 01 39 43" src="https://github.com/rshaarma/Console-Finances/assets/64362564/fe7bee31-2062-48df-9f7d-d823e73baba0"></span>
 
 This repo consits of the task to create code for analyzing the financial records of a company from a financial dataset which was provided. Skills used include psuedocoding, variables, for loops, math, multidimensional arrays and conditional logic.
 
