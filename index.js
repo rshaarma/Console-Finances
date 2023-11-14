@@ -108,7 +108,7 @@ for (var i = 1; i < totalMonths; i++) {
   var difference = finances[i][1] - finances[i - 1][1];
   differences.push(difference);
 }
-
+// console.log(differences);
 var averageChange =
   differences.reduce((accumulator, value) => {
     return accumulator + value;
@@ -117,3 +117,20 @@ var averageChange =
 console.log(`Average Change: ${averageChange.toFixed(2)}`);
 
 // The greatest increase in Profit/Losses (date and amount) over the entire period.
+var profitValue = differences[0];
+var lossValue = differences[0];
+var profitMonth;
+var lossMonth;
+
+for (var i = 0; i < differences.length; i++) {
+  if (profitValue < differences[i]) {
+    profitValue = differences[i];
+    profitMonth = finances[i + 1][0];
+  }
+  if (lossValue > differences[i]) {
+    lossValue = differences[i];
+    lossMonth = finances[i + 1][0];
+  }
+}
+console.log(`Greatest Gain in Profits: ${profitMonth} (£${profitValue})`);
+console.log(`Greatest Decrease in Profits ${lossMonth} (£${lossValue})`);
