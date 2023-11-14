@@ -1,0 +1,28 @@
+body {
+  background-color: antiquewhite;
+}
+
+section {
+  height: 80vh;
+  color: #312a63;
+}
+
+section > h2,
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.sectionTable {
+  display: flex;
+  justify-content: center;
+  padding: 120px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  color: #312a63;
+}

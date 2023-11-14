@@ -132,5 +132,5 @@ for (var i = 0; i < differences.length; i++) {
     lossMonth = finances[i + 1][0];
   }
 }
-console.log(`Greatest Gain in Profits: ${profitMonth} (£${profitValue})`);
-console.log(`Greatest Decrease in Profits ${lossMonth} (£${lossValue})`);
+console.log(`Greatest Gain in Profits: ${profitMonth} ($${profitValue})`);
+console.log(`Greatest Decrease in Profits: ${lossMonth} ($${lossValue})`);
