@@ -4,7 +4,7 @@
 
   <p align="center">
     <strong>Explore the docs »</strong>
-    <a href="https://github.com/rshaarma/Console-Finances/issues">View Demo</a>
+    <a href="https://rshaarma.github.io/Console-Finances/">View Demo</a>
     ·
     <a href="https://github.com/rshaarma/Console-Finances/issues">Report Bug</a>
     ·
