@@ -3,7 +3,7 @@ body {
 }
 
 section {
-  height: 80vh;
+  height: 80vh; /* set height to 80% virtual height*/
   color: #312a63;
 }
 
@@ -21,7 +21,7 @@ p {
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* set the content to center*/
   align-items: center;
   padding: 2rem 0;
   color: #312a63;
